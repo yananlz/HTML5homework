@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>作业</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <p style="font-size:30px;font-weight: bloder;font-family:SimHei">学生信息</p>
+        <fieldset  style="width:170px;">
+            <legend id="ziti">学生档案</legend>
+            <form id="testform" method="get" action="#S">	
+                姓名：
+                <br/>
+                <input type="text" name="name1" required 
+                placeholder="请输入姓名" autofocus="autofocus"
+                autocomplete="on"/>
+                <br/>
+                学号：
+                <br/>
+                <input type="number" name="name2" required 
+                placeholder="请输入学号" step="1"
+                autocomplete="on"/>
+                <br/>
+                手机号码：
+                <br/>
+                <input type="tel" name="name3" required 
+                placeholder="请输入手机号" 
+                autocomplete="on"/>
+                <br/>
+                邮箱地址：
+                <br/>
+                <input type="email" name="name4" required 
+                placeholder="请输入邮箱地址" 
+                autocomplete="on"/>
+                <br/>
+                录取学校：
+                <br/>
+                <input type="search" name="name5" list="school"
+                autocomplete="on"/>
+                <datalist id="school">
+                    <option>河北师范大学</option>
+                    <option>河北工业大学</option>
+                    <option>山东医科大学</option>
+                    <option>河北农业大学</option>
+                    <option>华北电力大学</option>
+                </datalist>
+                <br/>
+                入学成绩：
+                <br/>
+                <input type="number" name="name6"  autocomplete="on"/>
+                <br/>
+                入学时间：
+                <br/>
+                <input type="date"   name="name7" autocomplete="on" style="width:160px;"/>
+                <br/>
+                <br/>
+                <input type="submit" value="提交" style="width:165px;"/>
+                
+            </form>
+        </fieldset>
+    </body>
+    <script>
+        var ziti=document.getElementById("ziti");
+        ziti.style.color="red";
+        
+        
+    </script>
+</html>
